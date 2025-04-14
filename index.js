@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.post('/functions/reverseString', async (req, res) => {
+app.post('/functions/reverseStringByGourav', async (req, res) => {
   try {
     const { input } = req.body;
     if (typeof input !== 'string') {
@@ -20,9 +20,9 @@ app.post('/functions/reverseString', async (req, res) => {
 });
 
 
-app.get('/functions/reverseString', (req, res) => {
+app.get('/functions/reverseStringByGourav', (req, res) => {
   res.send({
-    name: "reverseString",
+    name: "reverseStringByGourav",
     description: "Reverses the given string",
     input: {
       type: "string",
